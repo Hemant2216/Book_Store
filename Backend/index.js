@@ -10,7 +10,7 @@ const app=express(); //storing it so that we can use
 app.use(express.json());//middleware for parsing json body postman 
 
 app.get('/',(req,res)=>{
-    res.json("Hello");
+    
     console.log(req);
     return res.status(234).send('welcome');
 });
