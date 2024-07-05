@@ -15,7 +15,7 @@ const Home = () => {
     useEffect(()=>{
         setLoading(true);
         axios
-            .get('https://book-store-api-gray-ten.vercel.app/books')
+            .get('https://book-store-backend-jet.vercel.app/books')
             .then((response)=>{
                 setBooks(response.data.data);
                 setLoading(false);
