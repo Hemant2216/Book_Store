@@ -25,10 +25,10 @@ app.get('/',(req,res)=>{
 //         allowedHeaders:['Access-Control-Allow-Origin'],
 //     })
 // )
-// app.use(cors());
-app.use(cors({
-  origin: 'https://book-store-frontend-inky.vercel.app'  // Or use '*' to allow any origin
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: 'https://book-store-frontend-inky.vercel.app'  // Or use '*' to allow any origin
+// }));
 
 //midleware for crud using express
 app.use('/books',booksRoute);
