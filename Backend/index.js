@@ -18,14 +18,14 @@ app.get('/',(req,res)=>{
 
 
 //middleware for handling CORS policy
-app.use(
-    cors({
-        origin:'https://book-store-frontend-inky.vercel.app',
-        methods:['GET','POST','PUT','DELETE'],
-        allowedHeaders:['Access-Control-Allow-Origin'],
-    })
-)
-// app.use(cors());
+// app.use(
+//     cors({
+//         origin:'https://book-store-frontend-inky.vercel.app',
+//         methods:['GET','POST','PUT','DELETE'],
+//         allowedHeaders:['Access-Control-Allow-Origin'],
+//     })
+// )
+app.use(cors());
 
 //midleware for crud using express
 app.use('/books',booksRoute);
