@@ -13,7 +13,7 @@ const DeleteBook = () => {
   const handelDeleteBook=()=>{
     setLoading(true);
     axios
-      .delete(`https://book-store-backend-jet.vercel.app/books/${id}`)
+      .delete(`https://book-store-bee.onrender.com/books/${id}`)
       .then(()=>{
         setLoading(false);
         enqueueSnackbar('Book Deleted Successfully',{variant:'success'})
